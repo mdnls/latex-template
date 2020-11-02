@@ -1,7 +1,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Daniels - LaTeX Generic Template
-% Version 1.0 - May 4, 2020
+% Version 2.0 - May 4, 2020
 % 
+% 2.0 Changelog: all theorem environments use 3-4 character short names. I've added various mathbb and mathcal shortcuts. 
 % Latest Author: Max Daniels (mdnls.cc)
 %
 % License:
@@ -70,8 +71,8 @@
 \newcommand{\N}{{\mathbb N}}
 \newcommand{\Q}{{\mathbb Q}}
 \newcommand{\Z}{{\mathbb Z}}
-
 \newcommand{\E}{{\mathbb E}}
+\newcommand{\F]{{\mathbb F}}
 
 \newcommand{\Acl}{\mathcal{A}}
 \newcommand{\Bcl}{\mathcal{B}}
@@ -81,6 +82,7 @@
 \newcommand{\Fcl}{\mathcal{F}}
 \newcommand{\Gcl}{\mathcal{G}}
 \newcommand{\Hcl}{\mathcal{H}}
+\newcommand{\Jcl}{\mathcal{J}}
 \newcommand{\Kcl}{\mathcal{K}}
 \newcommand{\Lcl}{\mathcal{L}}
 \newcommand{\Mcl}{\mathcal{M}}
@@ -178,11 +180,11 @@
 \newtheorem{dfn}[-thm]{Definition}
 
 \theoremstyle{claim}
-\newtheorem{claim}{Claim}[exr]
+\newtheorem{clm}{Claim}[exr]
 
 \newcommand{\nb}[1]{{\color{Maroon}{$\star$ #1 $\star$}}}
 
-\newenvironment{theorem}{
+\newenvironment{thm}{
     	\begin{mdframed}[style=callout]
     	\begin{-thm}
 	}
@@ -194,13 +196,13 @@
 	}
     { \end{-prop} \end{mdframed} \vspace{-4px}}
     
-\newenvironment{lemma}{
+\newenvironment{lem}{
     	\begin{mdframed}[style=callout]
     	\begin{-lem}
 	}
     { \end{-lem} \end{mdframed} \vspace{-4px}}
 
-\newenvironment{cor}{
+\newenvironment{corr}{
     	\begin{mdframed}[style=callout]
     	\begin{-cor}
 	}
