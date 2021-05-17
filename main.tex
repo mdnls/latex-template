@@ -1,10 +1,6 @@
 
 \documentclass{article}
 
-\usepackage[english]{babel}
-\usepackage[square,numbers]{natbib}
-\bibliographystyle{plainnat}
-\setcitestyle{authoryear}
 
 \usepackage{daniels}
 % Includes
@@ -24,6 +20,7 @@
 %   algorithm2e
 %   mdframed
 %   listings
+\usepackage[numbers]{natbib}
 
 % ==============================
 %           Details   
@@ -73,7 +70,7 @@ This is an exercise.
 \end{exr}
 
 \section{Citations}
-Citations are in author-year format with Natbib, like so: \citep{lamport1994latex}.
+Citations are provided by Natbib: \cite{lamport1994latex} or in textual \citet{lamport1994latex} and parenthetical \citep{lamport1994latex} modes. This functionality is separate of the Style file and requires \texttt{\symbol{92}usepackage[numbers]\{natbib\}} in the preamble along with \texttt{\symbol{92}bibliographystyle\{plainnat\}} in the document. 
 \section{Numbering Demonstration}
 Aliquam arcu turpis, ultrices sed luctus ac, vehicula id metus. Morbi eu feugiat velit, et tempus augue. Proin ac mattis tortor. Donec tincidunt, ante rhoncus luctus semper, arcu lorem lobortis justo, nec convallis ante quam quis lectus. Aenean tincidunt sodales massa, et hendrerit tellus mattis ac. Sed non pretium nibh.
 
@@ -141,4 +138,5 @@ sys.stdout.write("Hello World!\n")
 
 \newpage
 \bibliography{citations}
+\bibliographystyle{plainnat}
 \end{document}
